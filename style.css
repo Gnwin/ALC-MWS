@@ -1,0 +1,340 @@
+
+
+body {
+  background-image: url("./background.png");
+  background-color: #f2f2f2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color:#3359DF;
+  width:100%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 25px auto auto auto;
+}
+
+.topnav img {
+  width:150px;
+  float: left;
+  margin:10px 20px 10px 10px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navright {
+  float: right;
+  display:block;
+} 
+
+.container {
+    cursor: pointer;  
+}
+
+.topnav #ham-burger {
+    float: right;
+    display:none;
+}
+
+  
+.bar1, .bar2, .bar3 {
+  width: 18px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 3px 0;
+  transition: 0.4s;
+  border-radius: 20px;   
+}
+  
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+  
+.yellow-banner {
+  overflow: hidden;
+  background-color: #FFAD33;
+  width:100%;
+}
+
+.yellow-banner p {
+  font-size: 20px;
+  width: 550px;
+  margin: 8px auto;
+}
+
+
+.topnav a.active {
+  background-color: #4CAF50;
+}
+
+form {
+  margin: 50px 50px;
+}
+
+form div:nth-of-type(1) {
+  width: 1000px;
+}
+
+form .input {
+  /* padding-left: 40px; */
+}
+
+.input #name {
+  width:80%;
+}
+
+.input #email {
+  width:80%;
+}
+
+.radio {
+  width: 500px;
+  margin: 0;
+}
+
+.radio ul {
+  width: 300px;
+}
+
+li{
+  list-style: none;
+}
+
+#submit-button {
+  background-color: blue;
+  color: white;
+  padding: 15px 100px;
+  font-size: 10px;
+}
+
+.bottomnav {
+  background-color: #333;
+  bottom: 0;
+  text-align: center;
+  overflow:hidden;
+  height: 50px;
+}
+
+.bottomnav p {
+  width: 450px;
+  margin: 17px auto;
+  color: white;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  body {
+    background-image: url("./background.png");
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    
+  body {
+    background-image: url("./background.png");
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  form div:nth-of-type(1) {
+    width: 600px;
+  }
+
+}
+  
+
+  
+@media (min-width: 500px) and (max-width: 767px) { 
+    
+  body {
+    background-image: url("./background.png");
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .yellow-banner {
+  overflow: hidden;
+  background-color: #FFAD33;
+  width:100%;
+}
+
+  .yellow-banner p {
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    margin: 4px auto;
+  }
+
+  .yellow-banner > b {
+    width: 400px;
+  }
+
+  .navright {
+    display:none;
+  }
+
+  .topnav #ham-burger {
+    display:block;
+  }
+  
+  form {
+    width: 80%;
+    margin: 25px 25px;
+    box-sizing: border-box;
+  }
+
+  form div:nth-of-type(1) {
+    width: 400px;
+  }
+    
+  .input {
+    padding-left: 40px;
+  }
+    
+  .input #name {
+    width:80%;
+  }
+    
+  .input #email {
+    width:80%;
+  }
+    
+  .radio {
+    width: 100%;
+    margin: 0;
+  }
+    
+  .radio ul {
+    width: 100%;
+  }
+    
+  li{
+    list-style: none;
+  }
+
+    /* .topnav.responsive {position: relative;}
+    .topnav.responsive div.container {
+      position: absolute;
+      right: 0;
+      top: 0;
+    } */
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 500px) {
+
+  body {
+    background-image: url("./background.png");
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 23px auto auto auto;
+  }
+
+  .topnav img {
+    width: 140px;
+    float: left;
+    margin:8px 18px 8px 8px;
+  }
+
+  .topnav #ham-burger {
+    float: right;
+    display:block;
+    margin: auto 0 auto 0;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 17px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 2px 0;
+    transition: 0.4s;
+  }
+    
+  .yellow-banner > p {
+    font-size: 17px;
+    width: 96%;
+    text-align: center;
+    margin: 2px auto;
+  }
+
+  .bottomnav {
+    height: 50px;
+  }
+
+  .bottomnav p {
+    width: 97%;
+    margin: 15px auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .navright {
+    display:none;
+  }
+}

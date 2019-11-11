@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <title>Meetup 3.0 RSVP</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    
+     
+        <div class="topnav" id="myTopnav">
+            <img src="Andela.png" alt="andelalogo">
+            <a href="Home" class="active">Home</a>
+            
+            <div class="navright">
+            <a href="Join-Andela">Join Andela</a>
+            <a href="Insights">Insights</a>
+            <a href="Resources">Resources</a>
+            <a href="About">About</a>
+            </div>
+
+            <div id="ham-burger" >
+                <a href="javascript:void(0)" onclick="myAction()" class="menulist"><div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class='yellow-banner'>
+            <p><b>ALCwithGoogle meetup 3.0: <i>Register to attend!</i></b></p>
+        </div>
+        
+        <form method="" style='font-size: 18px; font-weight: bold' onsubmit="alert('Submitted!');">
+            <!-- onsubmit='getDetails(); return false' -->
+            <div class='input'>
+                    <label for="name" >Name:  </label>
+                    <input type="text" name="name" id="name">
+                    
+                    <br>
+                    <br>
+
+                    <label for="email">Email:  </label>
+                    <input type="text" name="email" id="email">
+            </div> 
+
+                <br>
+                <br>
+                <br>
+
+            <div class='radio'>
+                <ul>
+                    <label for='c1'>Select country:</label>
+                    <li><input type="radio" name='country' id="c1" value='Nigeria'>Nigeria</li>
+                    <li><input type="radio" name='country' id="c1" value='Kenya'>Kenya</li>
+                    <li><input type="radio" name='country' id="c1" value='Tanzania'>Tanzania</li>
+                    <li><input type="radio" name='country' id="c1" value='Uganda'>Uganda</li>
+                    <li><input type="radio" name='country' id="c1" value='Rwanda'>Rwanda<li>
+                </ul>  
+               
+                <br>
+                <br>
+                
+                <ul>
+                    <label for='c2'>Choose your state:</label>
+                    <li><input type="radio" name='state' id="c2" value='Anambra'>Anambra</li>
+                    <li><input type="radio" name='state' id="c2" value='Enugu'>Enugu</li>
+                    <li><input type="radio" name='state' id="c2" value='Abia'>Abia</li>
+                    <li><input type="radio" name='state' id="c2" value='Imo'>Imo</li>
+                    <li><input type="radio" name='state' id="c2" value='Ebonyi'>Ebonyi<li>
+                </ul>  
+
+                <br>
+                <br>
+
+                <ul>
+                    <label for='v1'>Choose your preferred venue:</label>
+                    <li><input type="radio" name='venue' id="v1" value='Foretrust Digital Center'>Foretrust Digital Center</li>
+                    <li><input type="radio" name='venue' id="v1" value='Devamplify'>Devamplify</li>
+                
+                    <pre>
+                    </pre>
+                    <input type="submit" id="submit-button">    
+                </ul>
+                
+            </div>
+                
+            <script src="form1.js" defer></script> 
+        </form>
+        <div class="bottomnav">
+                <p>Copyright &copy; Andela 2019 | Register to attend!</p>            
+        </div>
+     
+
+        
+    </body>
+</html>
